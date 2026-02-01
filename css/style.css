@@ -1,0 +1,213 @@
+body {
+    min-height: 100vh;
+    background-image: url("../images/background-general.png");
+    background-size: cover;
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #2b2b2b;
+}
+
+h1 {
+    font-family: "Cormorant", serif;
+    font-size: 2.4rem;
+    color: #f0f5f2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: "Cormorant", serif;
+    font-size: 2rem;
+    margin-top: 0px;
+    color: #3c6e5a;
+}
+
+h3{
+    font-family: "Cormorant", serif;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    color: #204529;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+    margin: 0.5rem;
+    background-color: #3f6f5a;
+    color: #f4f7f5;
+    border: 1px solid #2f5545;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+button:hover {
+    background-color: #5ca68b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+strong {
+    color: #20504d;
+    letter-spacing: 0.02em;
+}
+
+.wrapper {
+    display: flex;
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 1rem 1rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: rgba(230, 245, 240, 0.65);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    text-shadow: 0 1px 1px rgba(220, 210, 170, 0.42);
+    backdrop-filter: blur(2px);
+}
+
+.three-column {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+}
+
+.footer {
+    padding: 1rem 2rem;
+    background-color: rgba(230, 245, 240, 0.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #555;
+    margin: 3rem auto 1rem;
+    max-width: 90%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.footer p.disclaimer {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.footer p.ai-disclosure {
+    font-style: italic;
+    color: #666666;
+    margin-top: 0;
+}
+
+.justify-center {
+    justify-content: center;
+    gap: 0;
+}
+
+/* Home-sepcific styling */
+.home {
+    background-image: url('../images/background-home.png');
+}
+
+/* Hero-specific styling */
+.hero-box {
+    width: 100%;
+    background-color: rgba(15, 45, 35, 0.98);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: inset 0 -40px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Mission-specific styling */
+.mission {
+    margin: 0.4rem auto 0;
+    background-color: rgba(240, 250, 247, 0.7);
+    backdrop-filter: blur(2px);
+}
+
+.mission h2 {
+    width: 60%;
+    margin: 0 auto 0.75rem;
+    color: #2f5f4f;
+}
+
+.mission h3 {
+    width: 60%;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #4f6f63;
+    margin: 0 auto 1.25rem;
+}
+
+.mission p {
+    width: 60%;
+    margin: 0 auto 1rem;
+}
+
+/* Bio-specific styling */
+.page-heading {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #2a4d3a;
+    font-family: "Cormorant", serif;
+    text-align: center;
+}
+
+.bio-wrapper {
+    align-items: center;
+    margin: 30px 15px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: rgba(230, 245, 240, 0.65);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.bio-wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.bio-image {
+    flex: 1 1 250px;
+    max-width: 300px;
+    border-radius: 12px;
+    margin: 0 2rem 0 0;
+    object-fit: cover;
+}
+
+.bio-text {
+    flex: 2 1 400px;
+    text-shadow: 0 1px 1px rgba(220, 210, 170, 0.42);
+}
+
+.bio-text h3 {
+    margin: 1.5rem auto 0;
+}
+
+.bio-text p {
+    margin-top: 0;
+}
+
+.bio-expertise {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.bio-specialization {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
