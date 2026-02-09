@@ -11,20 +11,356 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant&family=Nunito">
     </head>
     <body>
-        <div>
-            <div class="box hero-box">
-                <h1>Museum of Jade Studies</h1>
-                <nav>
-                    <button onclick="location.href='../index.html'">Home</button>
-                    <button onclick="location.href='staff.html'">Staff</button>
-                    <button onclick="location.href='collections.html'">Collections</button>
-                </nav>
-            </div>
+        <!-- HEADER -->
+        <div class="box hero-box">
+            <h1>Museum of Jade Studies</h1>
+            <nav>
+                <button onclick="location.href='../index.html'">Home</button>
+                <button onclick="location.href='staff.html'">Staff</button>
+                <button onclick="location.href='collections.html'">Collections</button>
+                <button onclick="location.href='shop.html'">Shop</button>
+            </nav>
         </div>
         <div class="wrapper justify-center">
-            <button onclick="location.href='#'">Archaeology</button>
-            <button onclick="location.href='#'">Anthropology</button>
-            <button onclick="location.href='#'">Histories</button>
+            <button onclick="showSection('archaeology')">Archaeology</button>
+            <button onclick="showSection('anthropology')">Anthropology</button>
+            <button onclick="showSection('assemblages')">Assemblages</button>
+            <button onclick="showSection('histories')">Histories</button>
         </div>
+        <p class="ai-attribution">
+            The content in this gallery was entirely created by AI under human direction.  It was then curated, reviewed 
+            and edited by a human before being published.
+        </p>
+
+        <!-- ARCHAEOLOGY GRID -->
+        <section id="archaeology" class="collection-section">
+            <h2 class="collection-heading">Archaeology</h2>
+            <p class="collection-introduction">
+                Archaeology presents material objects recovered from past human activity, emphasizing physical 
+                properties, manufacture, and evidence of use.
+            </p>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Jade Crescent Ritual Pendant</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/jade-crescent-pendant.png" 
+                         class="collection-image" 
+                         alt="Crescent-shaped jade pendant with two drilled holes">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Nephrite jade, pale green with white veining</p>
+                        <p><strong>Size/Weight/Shape:</strong> 9 cm wide, 6 cm tall, crescent-shaped, approx 120 g</p>
+                        <p>
+                            <strong>Physical Properties:</strong> Smooth polish on convex face; matte abrasion on inner 
+                            curve
+                        </p>
+                        <p>
+                            <strong>Estimated Age:</strong> ~2,300 years old (contextual dating from associated 
+                            ceramics)
+                        </p>
+                        <p><strong>Preservation State:</strong> Nearly pristine; minor edge chipping</p>
+                        <p>
+                            <strong>Location Found:</strong> Hilltop Shrine Complex, Sector B-4, 
+                            42.113&deg;N/71.992&deg;W
+                        </p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use and Function</h3>
+                        <p><strong>Likely Purpose:</strong> Ceremonial ornament worn on chest or suspended in shrine</p>
+                        <p><strong>Evidence of Use:</strong> Microscopic cord wear on suspension holes</p>
+                        <p>
+                            <strong>Manufacture Clues:</strong> Fine rotary drilling; hand-polished surfaces; 
+                            symmetrical shaping
+                        </p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found with:</strong> Burnt incense nodules, two clay figurines</p>
+                        <p><strong>Burial/Habitat context:</strong> Found in collapsed shrine alcove</p>
+                        <p><strong>Symbolism:</strong> Crescent motif possibly linked to lunar cycles</p>
+                        <p><strong>Comparison:</strong> Similar to pendants from the River Valley Jade Cultures</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Carved Jade Tablet Fragment</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/jade-tablet-fragment.png"
+                         class="collection-image"
+                         alt="Fragmented jade tablet with carved glyphs">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Dark green nephrite jade</p>
+                        <p><strong>Size/Weight/Shape:</strong> 14 x 7 cm rectangular fragment; 210 g</p>
+                        <p>
+                            <strong>Physical Properties:</strong> One polished face; reverse left rough; broken along 
+                            diagonal
+                        </p>
+                        <p><strong>Estimated Age:</strong> ~1,800 years old (stratigraphic layer)</p>
+                        <p><strong>Preservation State:</strong> Partial; break edges weathered</p>
+                        <p><strong>Location Found:</strong> Lower Settlement Excavation, Trench 12C</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use and Function</h3>
+                        <p><strong>Likely Purpose:</strong> Administrative or ritual record tablet</p>
+                        <p><strong>Evidence of Use:</strong> Repeated handling polish along lower edge</p>
+                        <p><strong>Manufacture Clues:</strong> Chisel-cut glyphs; straight-edge scoring lines</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found with:</strong> Charcoal, pottery shards, collapsed wall debris</p>
+                        <p><strong>Burial/Habitat Context:</strong> Domestic storage room</p>
+                        <p><strong>Symbolism:</strong> Glyphs include spiral motifs associated with renewal</p>
+                        <p><strong>Comparison:</strong> Comparable to tablets found in the Jade Ledger Archive site</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Jade-Inlaid Bronze Knife</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/bronze-knife-with-jade-inlay.png"
+                         class="collection-image"
+                         alt="Bronze knife with jade inlay in handle">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Cast bronze with jade chips set into handle</p>
+                        <p><strong>Size/WeightShape:</strong> 22 cm long; tapered blade; approx. 300 g</p>
+                        <p><strong>Physical Properties:</strong> Corroded bronze; jade inlay intact; blade dulled</p>
+                        <p><strong>Estimated Age:</strong> ~2,600 years old (carbon-dated wooden sheath remnants)</p>
+                        <p><strong>Preservation State:</strong> Blade heavily oxidized; handle stable</p>
+                        <p><strong>Location Found:</strong> Riverside Workshop District, Pit 7</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use and Function</h3>
+                        <p><strong>Likely Purpose:</strong> High-status utility knife or ceremonial tool</p>
+                        <p><strong>Evidence of Use:</strong> Edge wear; micro-scratches from cutting plant fibers</p>
+                        <p><strong>Manufacture Clues:</strong> Mold-cast blade; hand-set jade chips; hammered rivets</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found with:</strong> Bronze slag, broken molds, tool fragments</p>
+                        <p><strong>Burial/Habitat Context:</strong> Industrial workshop collapse</p>
+                        <p><strong>Symbolism:</strong> Jade inlay may indicate ownership by artisan guild leader</p>
+                        <p>
+                            <strong>Comparison:</strong> Similar hybrid jade-bronze tools from Northern Jade Workshops
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANTHROPOLOGY GRID -->
+        <section id="anthropology" class="collection-section">
+            <h2 class="collection-heading">Anthropology</h2>
+            <p class="collection-introduction">
+                Anthropology presents human remains and culturally embedded materials, focusing on the body, ritual 
+                practice, and lived context.
+            </p>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Jade-Bead Burial Necklace</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/jade-burial-necklace.png"
+                         class="collection-image"
+                         alt="Jade bead necklace recovered from burial context">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Nephrite beads, fiber cord remnants</p>
+                        <p><strong>Size/Weight/Shape:</strong> 48 cm total length; beads 0.8-1.2 cm; 95 g</p>
+                        <p>
+                            <strong>Physical Properties:</strong> Beads uniformly polished; cords partially mineralized
+                        </p>
+                        <p><strong>Estimated Age:</strong> ~1,500 years old (carbon-dated cord fibers)</p>
+                        <p><strong>Preservation State:</strong> Mostly complete; some bead cracking</p>
+                        <p><strong>Location Found:</strong> Burial Mound 3, Chamber A</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use and Function</h3>
+                        <p><strong>Likely Purpose:</strong> Mortuary adornment</p>
+                        <p><strong>Evidence of Use:</strong> Wear rings around bead perforations</p>
+                        <p><strong>Manufacture Clues:</strong> Hand-drilled perforations; consistent bead sizing</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found with:</strong> Human remains, shell bracelets, ochre dust</p>
+                        <p><strong>Burial/Habitat Context:</strong> Elite burial chamber</p>
+                        <p><strong>Symbolism:</strong> Jade associated with vitality and ancestral continuity</p>
+                        <p><strong>Comparison:</strong> Matches necklaces from the High Ridge Burial Complex</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Jade-Handled Ritual Brush</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/ritual-brush-with-jade-handle.png"
+                         class="collection-image"
+                         alt="Ritual brush with jade handle and mineralized bristle socket">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Jade handle; mineralized bristle base</p>
+                        <p><strong>Size/Weight/Shape:</strong> 17 cm long; cylindrical handle; 140 g</p>
+                        <p><strong>Physical Properties:</strong> Handle smooth; bristle socket cracked</p>
+                        <p><strong>Estimated Age:</strong> ~1,900 years old (contextual dating)</p>
+                        <p><strong>Preservation State:</strong> Handle pristine; bristles absent</p>
+                        <p><strong>Location Found:</strong> Temple Archive Room, Layer IV</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use and Function</h3>
+                        <p><strong>Likely Purpose:</strong> Ceremonial writing or painting implement</p>
+                        <p><strong>Evidence of Use:</strong> Pigment residue in bristle socket</p>
+                        <p><strong>Manufacture Clues:</strong> Lathe-turned handle; carved geometric bands</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found with:</strong> Pigment bowls, bamboo slips, lacquer fragments</p>
+                        <p><strong>Burial/Habitat Context:</strong> Religious administrative space</p>
+                        <p><strong>Symbolism:</strong> Jade handle suggests ritual purity</p>
+                        <p><strong>Comparison:</strong> Similar ritual brushes from the Southern Jade Monastery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Jade Ear Spools (Pair)</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/pair-of-jade-ear-spools.png"
+                         class="collection-image"
+                         alt="Pair of carved jade ear spools">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Pale green jade</p>
+                        <p><strong>Size/Weight/Shape:</strong> 3.2 cm diameter; concave faces; 40 g each</p>
+                        <p><strong>Physical Properties:</strong> High polish; slight edge abrasion</p>
+                        <p><strong>Estimated Age:</strong> ~2,200 years old (associated burial layer)</p>
+                        <p><strong>Preservation State:</strong> Complete; minor surface scratches</p>
+                        <p><strong>Location Found:</strong> Burial Pit 9, Sector D</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use and Function</h3>
+                        <p><strong>Likely Purpose:</strong> Body adornment for stretched earlobes</p>
+                        <p><strong>Evidence of Use:</strong> Wear polish on insertion stems</p>
+                        <p><strong>Manufacture Clues:</strong> Symmetrical turning; fine abrasive polishing</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found with:</strong> Human remains, jade beads, obsidian blade</p>
+                        <p><strong>Burial/Habitat Context:</strong> Adult burial with status markers</p>
+                        <p><strong>Symbolism:</strong> Ear spools often associated with adulthood or rank</p>
+                        <p><strong>Comparison:</strong> Comparable to ear ornaments from the Jade Highlands Culture</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ASSEMBLAGES GRID -->
+        <section id="assemblages" class="collection-section">
+            <h2 class="collection-heading">Assemblages</h2>
+            <p class="collection-introduction">Assemblages present groups of artifacts recovered together from a shared archaeological context.</p>
+            <div class="wrapper assemblage-wrapper">
+                <div class="assemblage-summary">
+                    <h2>Jade Workshop Deposit</h2>
+                    <p><strong>Site:</strong> Northern River Valley Excavation</p>
+                    <p><strong>Date Range:</strong> 1500-1300 BCE (inferred)</p>
+                    <p><strong>Objects Recovered:</strong> 3 artifacts</p>
+                    <p><strong>Environment:</strong> Rock shelter near riverbank</p>
+                    <p><strong>Preservation Notes:</strong> Excellent stone preservation; fragile organics absent</p>
+                </div>
+            </div>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Jade Core Fragment</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/jade-core-fragment.png"
+                         class="collection-image"
+                         alt="Rough jade core fragment with flake scars">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Nephrite jade</p>
+                        <p><strong>Size/Shape:</strong> 8cm, irregular</p>
+                        <p><strong>Preservation State:</strong> Complete, flaked surface</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use & Function</h3>
+                        <p><strong>Likely Purpose:</strong> Core piece from jade tool production</p>
+                        <p><strong>Evidence of Use:</strong> Multiple flake removal scars</p>
+                        <p><strong>Manufacture Clues:</strong> Cortex remnants, percussion marks</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found With:</strong> Polishing stone, bifacial preform</p>
+                        <p><strong>Site Context:</strong> Near hearth and stone debris scatter</p>
+                        <p><strong>Sybolism:</strong> &mdash;</p>
+                        <p><strong>Comparison:</strong> Similar to jade workshop finds in Region X</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Jade Polishing Stone</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/jade-polishing-stone.png"
+                         class="collection-image"
+                         alt="Flat grinding stone with jade residue">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Sandstone</p>
+                        <p><strong>Size/Shape:</strong> 12cm, flat-oval</p>
+                        <p><strong>Preservation State:</strong> Worn edges, jade residue</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use & Function</h3>
+                        <p><strong>Likely Purpose:</strong> Polishing jade preforms</p>
+                        <p><strong>Evidence of Use:</strong> Smooth worn surface with residue</p>
+                        <p><strong>Manufacture Clues:</strong> No artificial shaping, use-wear present</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found With:</strong> Core fragment, bifacial preform</p>
+                        <p><strong>Site Context:</strong> Workshop debris layer</p>
+                        <p><strong>Symbolism:</strong> &mdash;</p>
+                        <p><strong>Comparison:</strong> Consistent with regional workshop tools</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper collection-wrapper-column">
+                <h2>Bifacial Jade Preform</h2>
+                <div class="wrapper collection-wrapper-row">
+                    <img src="../images/collections/bifacial-jade-preform.png"
+                         class="collection-image"
+                         alt="Jade bifacial preform with flake scars">
+                    <div class="collection-text">
+                        <h3 class="meta-group">Physical Description</h3>
+                        <p><strong>Material:</strong> Nephrite jade</p>
+                        <p><strong>Size/Shape:</strong> 9cm, leaf-shaped</p>
+                        <p><strong>Preservation State:</strong> Complete</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Use & Function</h3>
+                        <p><strong>Likely Purpose:</strong> Intermediate stage tool</p>
+                        <p><strong>Evidence of Use:</strong> Flake scars, no polish yet</p>
+                        <p><strong>Manufacture Clues:</strong> Bilateral flaking</p>
+                    </div>
+                    <div class="collection-text">
+                        <h3 class="meta-group">Cultural Context</h3>
+                        <p><strong>Found With:</strong> Core fragment, polishing stone</p>
+                        <p><strong>Stie Context:</strong> Workshop cluster</p>
+                        <p><strong>Symbolism:</strong> &mdash;</p>
+                        <p><strong>Comparison:</strong> Matches other workshop preforms</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HISTORIES GRID -->
+        <section id="histories" class="collection-section">
+            <h2 class="collection-heading">Histories</h2>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="wrapper">
+            <div class="box footer">
+                <p class="disclaimer">This is a fictitious website created purely for academic purposes.</p>
+                <p class="ai-disclosure">
+                    The content on this site was conceived by a human and created by AI. The images were created by AI 
+                    and curated, edited, reviewed, verified, and augmented by a human.
+                </p>
+            </div>
+        </footer>
+        <script src="../js/main.js"></script>
     </body>
 </html>

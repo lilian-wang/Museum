@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Lilian">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Museum of Jade Studies &mdash; Shop</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant&family=Nunito">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="box hero-box">
+            <h1>Museum of Jade Studies</h1>
+            <nav>
+                <button onclick="location.href='../index.html'">Home</button>
+                <button onclick="location.href='staff.html'">Staff</button>
+                <button onclick="location.href='collections.html'">Collections</button>
+                <button onclick="location.href='shop.html'">Shop</button>
+            </nav>
+        </div>
+        <h2 class="page-heading">Souvenir Shop</h2>
+
+        <!-- SHOP GRID -->
+        <div class="shop-wrapper">
+            <div data-id="replica001" class="shop-wrapper-column">
+                <img src="../images/collections/jade-crescent-pendant.png" 
+                     class="shop-image" 
+                     alt="Jade Crescent Ritual Pendant"
+                     title="'Moonlight favors the patient.' &mdash; Hilltop Shrine proverb"
+                     onclick="openModal(this)">
+                <div class="shop-text">
+                    <h3>Jade Crescent Pendant</h3>
+                    <p>
+                        Inspired by the jade pendant in the Archaeological Collection uncovered at the Hilltop Shrine 
+                        Complex, Sector B-4 &mdash; a pale nephrite jade ornament reproduced here as a replica, 
+                        reflecting its association with lunar-cycle ceremonies.
+                    </p>
+                </div>
+                <p class="price">$34.99</p>
+                <button onclick="addToCart('replica001')" class="add-btn">
+                    Add Jade Crescent Pendant to Cart
+                </button>
+            </div>
+            <div data-id="replica002" class="shop-wrapper-column">
+                <img src="../images/collections/jade-tablet-fragment.png" 
+                     class="shop-image" 
+                     alt="Carved Jade Tablet Fragment"
+                     title="'Every stone remembers.' &mdash; Lower Settlement saying"
+                     onclick="openModal(this)">
+                <div class="shop-text">
+                    <h3>Jade Tablet Fragment</h3>
+                    <p>
+                        Inspired by the carved jade tablet in the Archaeological Collection recovered from the Lower 
+                        Settlement Excavation, Trench 12C &mdash; a dark nephrite jade record tablet reproduced here as a 
+                        replica, echoing its role in ritual or administrative inscription.
+                    </p>
+                </div>
+                <p class="price">$28.50</p>
+                <button onclick="addToCart('replica002')" class="add-btn">
+                    Add Jade Tablet Fragment to Cart
+                </button>
+            </div>
+            <div data-id="replica003" class="shop-wrapper-column">
+                <img src="../images/collections/bronze-knife-with-jade-inlay.png"
+                     class="shop-image"
+                     alt="Jade-Inlaid Bronze Knife"
+                     title="'Tools carry the spirit of their maker' &mdash; Riverside Workshop maxim"
+                     onclick="openModal(this)">
+                <div class="shop-text">
+                    <h3>Jade-Inlaid Bronze Knife</h3>
+                    <p>
+                        Inspired by the jade-inlaid bronze knife in the Archaeological Collection excavated from the 
+                        Riverside Workshop District, Pit 7 &mdash; a cast bronze tool with jade inlay reproduced here as a 
+                        replica, reflecting its use as a high-status utility or ceremonial implement.
+                    </p>
+                </div>
+                <p class="price">$42.00</p>
+                <button onclick="addToCart('replica003')" class="add-btn">
+                    Add Jade-Inlaid Knife to Cart
+                </button>
+            </div>
+            <div data-id="replica004" class="shop-wrapper-column">
+                <img src="../images/collections/jade-burial-necklace.png"
+                     class="shop-image"
+                     alt="Jade-Bead Burial Necklace"
+                     title="'An ancestor's breath lives in jade.' &mdash; Burial Mound tradition"
+                     onclick="openModal(this)">
+                <div class="shop-text">
+                    <h3>Jade-Bead Necklace</h3>
+                    <p>
+                        Inspired by the jade-bead necklace in the Anthropology Collection uncovered in Burial Mound 3, 
+                        Chamber A &mdash; a polished jade bead adornment reproduced here as a replica, symbolizing vitality 
+                        and ancestral continuity.
+                    </p>
+                </div>
+                <p class="price">$24.75</p>
+                <button onclick="addToCart('replica004')" class="add-btn">
+                    Add Jade-Bead Necklace to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <img id="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <p id="modal-price" class="modal-price"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="wrapper">
+            <div class="box footer">
+                <p class="disclaimer">This is a fictitious website created purely for academic purposes.</p>
+                <p class="ai-disclosure">
+                    The content on this site was conceived by a human and created by AI. The images were created by AI 
+                    and curated, edited, reviewed, verified, and augmented by a human.
+                </p>
+            </div>
+        </footer>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

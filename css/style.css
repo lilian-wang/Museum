@@ -113,6 +113,14 @@ strong {
     gap: 0;
 }
 
+.page-heading {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #2a4d3a;
+    font-family: "Cormorant", serif;
+    text-align: center;
+}
+
 /* Home-sepcific styling */
 .home {
     background-image: url('../images/background-home.png');
@@ -159,14 +167,6 @@ strong {
 }
 
 /* Bio-specific styling */
-.page-heading {
-    font-size: 2.5rem;
-    margin: 1rem 0;
-    color: #2a4d3a;
-    font-family: "Cormorant", serif;
-    text-align: center;
-}
-
 .bio-wrapper {
     align-items: center;
     margin: 30px 15px;
@@ -210,4 +210,183 @@ strong {
 .bio-specialization {
     font-size: 0.95rem;
     opacity: 0.85;
+}
+
+/* Collection-specific styling */
+.ai-attribution {
+    max-width: 980px;
+    margin: 1.25rem auto 2rem auto;
+    font-size: 0.9rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: #3f3f3f;
+}
+
+.collection-heading {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #2a4d3a;
+    font-family: "Cormorant", serif;
+    text-align: center;
+}
+
+.collection-introduction {
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+.collection-wrapper-column {
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: rgba(230, 245, 240, 0.65);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.collection-wrapper-column h2 {
+    margin: 0 1rem 0;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.collection-wrapper-row {
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.collection-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    align-self: flex-start;
+}
+
+.collection-text {
+    flex: 1;
+    text-shadow: 0 1px 1px rgba(220, 210, 170, 0.42);
+}
+
+.collection-text p {
+    line-height: 1.1;
+}
+
+.collection-section {
+    display: none;
+}
+
+.meta-group {
+    font-size:0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4f6f63;
+}
+
+.assemblage-wrapper {
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    text-shadow: 0 1px 1px rgba(220, 210, 170, 0.42);
+    background-color: rgba(240, 250, 247, 0.7);
+    background-image: url("../images/collections/jade-workshop-deposit.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    backdrop-filter: blur(2px);
+    mask-image: radial-gradient(circle, black 60%, transparent 100%);
+}
+
+.assemblage-summary {
+    width: 80%;
+    margin: 0 auto 0.75rem;
+}
+
+.assemblage-wrapper img {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15%;
+    mask-image: radial-gradient(circle, black 60%, transparent 100%);
+}
+
+/* Shop-specific styling */
+.shop-wrapper {
+    display: flex;
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 1rem 1rem 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop-wrapper-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 19%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: rgba(230, 245, 240, 0.65);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.shop-image {
+    max-width: 240px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    cursor: pointer;
+}
+
+.shop-text {
+    flex-grow: 1;
+    text-shadow: 0 1px 1px rgba(220, 210, 170, 0.42);
+    margin: 1.5rem auto 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #fdfdf9;
+    max-width: 50%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 50%;
+    border-radius: 12px;
+}
+
+.modal-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close-modal {
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #444;
 }
