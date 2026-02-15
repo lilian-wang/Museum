@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Lilian">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Museum of Jade Studies &mdash; Cart</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant&family=Nunito">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="box hero-box">
+            <h1>Museum of Jade Studies</h1>
+            <nav>
+                <button onclick="location.href='../index.html'">Home</button>
+                <button onclick="location.href='staff.html'">Staff</button>
+                <button onclick="location.href='collections.html'">Collections</button>
+                <button onclick="location.href='shop.html'">Shop</button>
+            </nav>
+        </div>
+        <h2 class="page-heading">Shopping Cart</h2>
+
+        <!-- CONTROLS -->
+        <div class="member-toggle-wrapper">
+            <input type="checkbox" id="memberToggle">
+            <label for="memberToggle">Member Discount (15%)</label>
+        </div>
+
+        <!-- CART GRID -->
+        <div id="emptyMsg" class="empty" hidden>Your cart is empty</div>
+        <div id="items" hidden>
+            <table id="itemsField"></table>
+        </div>
+        <div id="details" class="details">
+            <div id="freeShipBadge" class="badge" hidden>Free Shipping Included!</div>
+            <pre id="summary"></pre>
+        </div>
+        <div id="buttons" class="wrapper justify-center" hidden>
+            <button id="clearBtn">Clear Cart</button>
+            <button onclick="location.href='shop.html'">Keep Shopping</button>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="wrapper">
+            <div class="box footer">
+                <p class="disclaimer">This is a fictitious website created purely for academic purposes.</p>
+                <p class="ai-disclosure">
+                    The content on this site was conceived by a human and created by AI. The images were created by AI 
+                    and curated, edited, reviewed, verified, and augmented by a human.
+                </p>
+            </div>
+        </footer>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

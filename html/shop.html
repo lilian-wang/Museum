@@ -8,7 +8,7 @@
         <meta name="robots" content="noindex, nofollow">
         <title>Museum of Jade Studies &mdash; Shop</title>
         <link rel="stylesheet" href="../css/style.css" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant&family=Nunito">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant&family=Nunito&family=Roboto+Mono">
     </head>
     <body>
         <!-- HEADER -->
@@ -22,10 +22,15 @@
             </nav>
         </div>
         <h2 class="page-heading">Souvenir Shop</h2>
+        <div class="wrapper justify-center">
+            <button onclick="location.href='cart.html'">
+                View Cart <span id="cartCount" aria-live="polite"></span>
+            </button>
+        </div>
 
         <!-- SHOP GRID -->
         <div class="shop-wrapper">
-            <div data-id="replica001" class="shop-wrapper-column">
+            <div data-id="replica001" class="shop-wrapper-item">
                 <img src="../images/collections/jade-crescent-pendant.png" 
                      class="shop-image" 
                      alt="Jade Crescent Ritual Pendant"
@@ -39,12 +44,19 @@
                         reflecting its association with lunar-cycle ceremonies.
                     </p>
                 </div>
-                <p class="price">$34.99</p>
-                <button onclick="addToCart('replica001')" class="add-btn">
+                <p class="price">
+                    Price: <span class="modal-price-value">$34.99</span><span class="qty-badge" aria-live="polite"></span>
+                </p>
+                <button onclick="addToCart(this)" 
+                        data-id="replica001"
+                        data-name="Jade Crescent Pendant"
+                        data-price="34.99"
+                        data-image="../images/collections/jade-crescent-pendant.png"
+                        class="add-btn">
                     Add Jade Crescent Pendant to Cart
                 </button>
             </div>
-            <div data-id="replica002" class="shop-wrapper-column">
+            <div data-id="replica002" class="shop-wrapper-item">
                 <img src="../images/collections/jade-tablet-fragment.png" 
                      class="shop-image" 
                      alt="Carved Jade Tablet Fragment"
@@ -54,16 +66,23 @@
                     <h3>Jade Tablet Fragment</h3>
                     <p>
                         Inspired by the carved jade tablet in the Archaeological Collection recovered from the Lower 
-                        Settlement Excavation, Trench 12C &mdash; a dark nephrite jade record tablet reproduced here as a 
-                        replica, echoing its role in ritual or administrative inscription.
+                        Settlement Excavation, Trench 12C &mdash; a dark nephrite jade record tablet reproduced here as 
+                        a replica, echoing its role in ritual or administrative inscription.
                     </p>
                 </div>
-                <p class="price">$28.50</p>
-                <button onclick="addToCart('replica002')" class="add-btn">
+                <p class="price">
+                    Price: <span class="modal-price-value">$28.50</span><span class="qty-badge" aria-live="polite"></span>
+                </p>
+                <button onclick="addToCart(this)" 
+                        data-id="replica002"
+                        data-name="Jade Tablet Fragment"
+                        data-price="28.50"
+                        data-image="../images/collections/jade-tablet-fragment.png"
+                        class="add-btn">
                     Add Jade Tablet Fragment to Cart
                 </button>
             </div>
-            <div data-id="replica003" class="shop-wrapper-column">
+            <div data-id="replica003" class="shop-wrapper-item">
                 <img src="../images/collections/bronze-knife-with-jade-inlay.png"
                      class="shop-image"
                      alt="Jade-Inlaid Bronze Knife"
@@ -77,12 +96,19 @@
                         replica, reflecting its use as a high-status utility or ceremonial implement.
                     </p>
                 </div>
-                <p class="price">$42.00</p>
-                <button onclick="addToCart('replica003')" class="add-btn">
+                <p class="price">
+                    Price: <span class="modal-price-value">$42.00</span><span class="qty-badge" aria-live="polite"></span>
+                </p>
+                <button onclick="addToCart(this)" 
+                        data-id="replica003"
+                        data-name="Jade-Inlaid Knife"
+                        data-price="42.00"
+                        data-image="../images/collections/bronze-knife-with-jade-inlay.png"
+                        class="add-btn">
                     Add Jade-Inlaid Knife to Cart
                 </button>
             </div>
-            <div data-id="replica004" class="shop-wrapper-column">
+            <div data-id="replica004" class="shop-wrapper-item">
                 <img src="../images/collections/jade-burial-necklace.png"
                      class="shop-image"
                      alt="Jade-Bead Burial Necklace"
@@ -96,8 +122,15 @@
                         and ancestral continuity.
                     </p>
                 </div>
-                <p class="price">$24.75</p>
-                <button onclick="addToCart('replica004')" class="add-btn">
+                <p class="price">
+                    Price: <span class="modal-price-value">$24.75</span><span class="qty-badge" aria-live="polite"></span>
+                </p>
+                <button onclick="addToCart(this)" 
+                        data-id="replica004"
+                        data-name="Jade-Bead Necklace"
+                        data-price="24.75"
+                        data-image="../images/collections/jade-burial-necklace.png"
+                        class="add-btn">
                     Add Jade-Bead Necklace to Cart
                 </button>
             </div>
